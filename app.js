@@ -17,8 +17,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function(){
 var appId = "c66d28a5-af9d-459a-85f1-725cce04fc70";
 var appPassword = "6|RMS$@rtpHY0dAT";
 var connector = new builder.ChatConnector({
-    "appId" : appId,
-    "appPassword" : appPassword
+    appId : appId,
+    appPassword : appPassword
 });
 server.post('/api/messages', connector.listen());
 
